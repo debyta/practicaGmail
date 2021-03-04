@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--  el metaname viewport  esto es para el responsive-->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Barra de navegación superior   #nav>.centrado>(a[#]#logo>img)+(ul#menu>(li>a[#])*4)-->
+    <div id="nav">
+            <div id="logo">
+                <a href="#">Gmail</a>
+            </div>
+            <ul id="menu">
+                <li><a href="#">Para empresas</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
+                <li><a href="#">Crear una cuenta</a></li>
+                <li><a href="#">Consigue Gmail</a></li>
+            </ul>
+        </div>
+   
+    <!--    #cabecera>h1+a#boton[#]{crear una cuenta}-->
+    <div id="cabecera">
+        <div class="centrado">
+            <div id="portada">
+                <h1>La sencillez y facilidad de Gmail, en todo tipo de dispositivos</h1>
+                <a href="#" class="boton">crear una cuenta</a>
+                <a href="#" class="boton">consigue gmail</a>
+            </div>
+        </div>
+    </div>
+    <!--#nuevaBandeja>h2+p+img-->
+    <div id="nuevaBandeja">
+        <div id="textBandeja" class="centrado">
+            <h2>Te presentamos tu nueva bandeja de entrada</h2>
+            <p>Con las nuevas pestañas personalizables lo controlas todo: de un vistazo sabes qué hay de nuevo y decides qué mensajes leer y cuándo hacerlo. </p>
+        </div>
+        <img src="img/inboxtabs.gif" alt="">
+    </div>
+
+    <!--#disfrutaGmail>.centrado>h2+p+(a[#].boton>img)+#imgDisp-->
+    <div id="disfrutaGmail">
+        <div class="centrado">
+            <h2>Disfruta de Gmail en cualquier dispositivo</h2>
+            <p>La sencillez y facilidad de Gmail, estés donde estés</p>
+            <a href="#" class="botonImg"><img src="img/playstore.png" alt=""></a>&nbsp;&nbsp;<a href="#" class="botonImg"><img src="img/appstore.svg" alt=""></a>
+        </div>
+        <div id="imgDisp"></div>
+    </div>
+
+
+    <!--#archAdj>.centrado>(#textAdj>h2+p)+#imgTab-->
+    <div id="archAdj">
+        <div class="centrado">
+            <div id="textAdj">
+                <h2>Ve archivos adjuntos al instante</h2>
+                <p>Ve archivos sin salir de Gmail. Incluso puedes guardar los adjuntos directamente en Drive para organizarlos y compartirlos de forma segura desde un solo sitio. </p>
+            </div>
+            <div id="imgTab"></div>
+        </div>
+    </div>
+
+    <!--#temasPer>.centrado>h2+p+#postales-->
+    <div id="temasPer">
+        <div id="textTemas" class="centrado">
+            <h2>Temas personalizados</h2>
+            <p>El número de temas ha aumentado desde 35 hasta el... infinito. Usa tu propia imagen como tema personalizado, o bien elige entre una selección de fotos. </p>
+        </div>
+        <div id="postales">
+            <div id="postal1"></div>
+            <div id="postal2"></div>
+            <div id="postal3"></div>
+            <div id="postal4"></div>
+        </div>
+    </div>
+
+    <!--    #todoBandeja>.centrado>(#txtBandeja>h2+p)+#imgBandeja-->
+    <div id="todoBandeja">
+        <div class="centrado">
+            <div id="txtBandeja">
+                <h2>Haz todo tipo de cosas sin moverte de la bandeja de entrada</h2>
+                <p>Haz un seguimiento de tus pedidos, opina sobre productos, confirma tu asistencia a eventos y mucho más sin abrir ni un correo electrónico. </p>
+            </div>
+            <div id="imgBandeja"></div>
+        </div>
+    </div>
+
+    <!--    #mejorInterfaz>.centrado>#imgInterfaz+#txtInterfaz>h2+p-->
+    <div id="mejorInterfaz" class="centrado">
+        <div id="imgInterfaz"></div>
+        <div id="txtInterfaz">
+            <h2>Una interfaz de redacción mejor</h2>
+            <p>Escribe mensajes sin perder de vista tu bandeja de entrada. La interfaz de redacción de Gmail es rápida, fácil de usar y tiene un montón de funciones. </p>
+        </div>
+    </div>
+
+
+    <!--             #gmailEmpresa>.centrado>#txtConsigue>h2+(p>span)+a+a.boton    -->
+    <div id="gmailEmpresa">
+        <div id="txtConsigue" class="centrado">
+            <h2>Consigue un correo personalizado y mucho más
+                con Gmail para empresas</h2>
+            <p>Usa tu querido Gmail también para trabajar. Consigue direcciones personalizadas tipo <span>@tuempresa.com</span> con calendarios, documentos, videoconferencias y otras funciones a las que puedes acceder con tu teléfono o tablet. </p>
+            <a href="#">más información ></a>
+            <a href="#" class="boton">empezar</a>
+        </div>
+    </div>
+
+<!--#footer>div#rallaColores+(ul#iconsRedes>(li>a[#])*4)+(ul#links>(li>a[#])*3)+(#abajo>(ul#terms>(li>a[#])*4)+#lengua)-->
+<div id="footer">
+   <div class="centrado">
+    <div id="rallaColores"></div>
+    <ul id="iconsRedes">
+        <li id="blog"><a href="#"><i class="fab fa-blogger"></i><i class="fab fa-blogger-b"></i></a></li>
+        <li id="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li id="gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li id="tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+    <ul id="links">
+        <li><a href="#">Nuestra política</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Para empresas</a></li>
+    </ul>
+    </div>
+    <div id="abajo">
+        <ul id="terms">
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Acerca de Google</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Condiciones</a></li>
+        </ul>
+        <div id="lengua"></div>
+    </div>
+</div>
+</body></html>
