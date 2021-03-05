@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <!--  el metaname viewport  esto es para el responsive-->
+    <title>Gmail</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
+   
     <!-- Barra de navegación superior   #nav>.centrado>(a[#]#logo>img)+(ul#menu>(li>a[#])*4)-->
     <div id="nav">
-            <div id="logo">
-                <a href="#">Gmail</a>
-            </div>
-            <ul id="menu">
-                <li><a href="#">Para empresas</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
-                <li><a href="#">Crear una cuenta</a></li>
-                <li><a href="#">Consigue Gmail</a></li>
-            </ul>
+        <div id="logo">
+            <a href="#">Gmail</a>
         </div>
-   
+        <ul id="menu">
+            <li><a href="#">Para empresas</a></li>
+            <li><a href="#">Iniciar sesión</a></li>
+            <li><a href="#">Crear una cuenta</a></li>
+            <li><a href="#">Consigue Gmail</a></li>
+        </ul>
+    </div>
+
     <!--    #cabecera>h1+a#boton[#]{crear una cuenta}-->
     <div id="cabecera">
         <div class="centrado">
@@ -41,9 +42,9 @@
             <h2>Te presentamos tu nueva bandeja de entrada</h2>
             <p>Con las nuevas pestañas personalizables lo controlas todo: de un vistazo sabes qué hay de nuevo y decides qué mensajes leer y cuándo hacerlo. </p>
         </div>
-        <img src="img/inboxtabs.gif" alt="">
+        <div id="imagenMovida" src="img/inboxtabs.gif" alt="">
+        </div>
     </div>
-
     <!--#disfrutaGmail>.centrado>h2+p+(a[#].boton>img)+#imgDisp-->
     <div id="disfrutaGmail">
         <div class="centrado">
@@ -112,30 +113,48 @@
         </div>
     </div>
 
-<!--#footer>div#rallaColores+(ul#iconsRedes>(li>a[#])*4)+(ul#links>(li>a[#])*3)+(#abajo>(ul#terms>(li>a[#])*4)+#lengua)-->
-<div id="footer">
-   <div class="centrado">
-    <div id="rallaColores"></div>
-    <ul id="iconsRedes">
-        <li id="blog"><a href="#"><i class="fab fa-blogger"></i><i class="fab fa-blogger-b"></i></a></li>
-        <li id="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li id="gplus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-        <li id="tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
-    </ul>
-    <ul id="links">
-        <li><a href="#">Nuestra política</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Para empresas</a></li>
-    </ul>
+    <!--#footer>div#rallaColores+(ul#iconsRedes>(li>a[#])*4)+(ul#links>(li>a[#])*3)+(#abajo>(ul#terms>(li>a[#])*4)+#lengua)-->
+            <div id="rallaColores">
+                <div id="colores">
+                    <div id="azul"></div>
+                    <div id="rojo"></div>
+                    <div id="amarillo"></div>
+                    <div id="verde"></div>
+                </div>
+            </div>
+    <div id="footer">
+            <div id="iconsRedes">
+                <ul>
+                    <li><a href="#"><i class="fab fa-blogger-b"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div id="links">
+                <ul>
+                    <li><a href="#">Nuestra política</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Para empresas</a></li>
+                </ul>
+            </div>
+        <div id="bajo">
+           
+<!--        <a name="abajo"></a>           -->
+               <ul id="terms">
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Acerca de Google</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Condiciones</a></li>
+            </ul>
+            <div id="lengua">
+                <div id="cuadro"><p>español</p><i class="fas fa-chevron-down"></i></div>
+            </div>
+        </div>
     </div>
-    <div id="abajo">
-        <ul id="terms">
-            <li><a href="#">Google</a></li>
-            <li><a href="#">Acerca de Google</a></li>
-            <li><a href="#">Privacidad</a></li>
-            <li><a href="#">Condiciones</a></li>
-        </ul>
-        <div id="lengua"></div>
-    </div>
-</div>
+    <div id="botonAbajo">
+    <i class="fas fa-chevron-down"></i>
+<!--<i class="fas fa-chevron-up"></i>-->
+  <!--   <a href="#abajo"></a>-->
+   </div>
 </body></html>

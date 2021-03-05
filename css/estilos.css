@@ -9,6 +9,11 @@ body {
     font-weight: 100;
 }
 
+::selection {
+    background-color: rgb(58, 141, 239);
+    color: #fff;
+}
+
 a {
     text-decoration: none;
 }
@@ -20,6 +25,29 @@ ul {
 .centrado {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+#botonAbajo {
+    position: fixed;
+    z-index: 9;
+    cursor: pointer;
+    height: 60px;
+    background-color: #dd5347;
+    border-radius: 50%;
+    bottom: 60px;
+    box-shadow: 0 14px 59px -7px rgb(0 0 0 / 85%);
+    right: 20px;
+    width: 60px;
+}
+
+#botonAbajo i {
+    font-size: 30px;
+    color: white;
+    display: inline;
+    height: 5px;
+    margin: 15px 14px;
+    padding: 3px;
+    position: absolute;
 }
 
 #nav {
@@ -69,9 +97,14 @@ ul {
 }
 
 #menu li a {
+    text-align: center;
     display: inline-block;
+    height: 59px;
     padding: 27px 32px;
     color: #333333;
+    width: 200px;
+    height: 69px;
+
 }
 
 #menu li a:hover {
@@ -105,7 +138,7 @@ h1 {
     font-weight: 100;
     line-height: 62px;
     width: 400px;
-    padding-bottom: 39px;
+    padding-bottom: 7%;
 }
 
 .boton {
@@ -125,14 +158,15 @@ h1 {
 #nuevaBandeja,
 #temasPer,
 #disfrutaGmail {
-    padding: 50px 0 30px;
+    padding: 3% 0% 3% 0%;
     text-align: center;
+    overflow: hidden;
 }
 
 #textBandeja,
 #textTemas {
     max-width: 400px;
-    padding: 100px 0 70px;
+    padding: 2% 0 3%;
 }
 
 h2 {
@@ -140,19 +174,21 @@ h2 {
     font-weight: 100;
     font-size: 40px;
     line-height: 48px;
-    padding-bottom: 30px;
+    padding-bottom: 7%;
 }
 
 p {
     color: #333;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
 }
 
-#nuevaBandeja img {
-    width: 100%;
-    height: auto;
+#imagenMovida {
+    height: 190px;
+    background-image: url(../img/inboxtabs.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .botonImg {
@@ -198,16 +234,15 @@ p {
 
 #postales {
     position: relative;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     height: 600px;
 }
 
 #postales div {
-    width: 960px;
+    width: 100%;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-    padding: 0 0 572px 0;
-    background-image: url(../img/themes1.jpg);
+    padding: 0 0 59% 0;
     border: 8px solid #fff;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -249,7 +284,7 @@ p {
         opacity: 1;
     }
 
-    2% {
+    5% {
         opacity: 1;
     }
 
@@ -268,10 +303,6 @@ p {
 
 @keyframes postal_2 {
     0% {
-        opacity: 0;
-    }
-
-    2% {
         opacity: 0;
     }
 
@@ -301,7 +332,7 @@ p {
         opacity: 0;
     }
 
-    49% {
+    48% {
         opacity: 0;
     }
 
@@ -317,10 +348,6 @@ p {
         opacity: 0;
     }
 
-    99% {
-        opacity: 1;
-    }
-
     100% {
         opacity: 0;
     }
@@ -328,6 +355,10 @@ p {
 
 @keyframes postal_4 {
     0% {
+        opacity: 1;
+    }
+
+    1% {
         opacity: 0;
     }
 
@@ -376,8 +407,8 @@ p {
 #mejorInterfaz {
     text-align: left;
     overflow: hidden;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 #imgInterfaz {
@@ -393,7 +424,7 @@ p {
 
 #txtInterfaz {
     width: 30%;
-    padding: 100px 0 70px;
+    padding: 3% 0 13%;
     float: left;
 }
 
@@ -421,62 +452,96 @@ p {
     font-weight: 400;
 }
 
-#footer {
-    background-color: #f9f9f9;
-
+#rallaColores {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    padding-right: 50px;
 }
 
-#rallaColores {}
+#colores {
+    float: right;
+}
+
+#azul,
+#rojo,
+#amarillo,
+#verde {
+    float: left;
+    height: 2px;
+}
+
+#azul {
+    border-left: 34px solid #0089fa;
+}
+
+#rojo {
+    border-right: 35px solid #ff002b;
+}
+
+#amarillo {
+    border-left: 35px solid #ffa900;
+}
+
+#verde {
+    border-right: 34px solid #00a753;
+}
+
+#footer {
+    /*    border: 1px solid #000;*/
+    background-color: #f9f9f9;
+}
 
 #iconsRedes {
-    
+    /*    border: 1px solid #000;*/
+    align-items: center;
+    float: left;
+    padding: 10px 0;
+    padding: 16px 120px 14px;
 }
 
 #iconsRedes li {
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-position: center;
+    /*    border: 1px solid #000;*/
+    float: left;
+    padding-left: 5px;
 }
 
 #iconsRedes li a {
+    background-color: #4e4e4e;
     display: inline-block;
+    padding: 5px;
+    color: #fff;
 }
 
-#blog {
-    
-}
-
-#fb {
-    
-}
-
-#gplus {
-    
-}
-
-#tw {
-    
+#iconsRedes i {
+    font-size: 16px;
 }
 
 #links {
+    /*    border: 1px solid #000;*/
     clear: both;
+    align-items: center;
+    float: left;
+    padding: 16px 120px 14px;
 }
 
 #links li {
     float: left;
-    padding-right: 10px;
+    padding-right: 21px;
 }
 
-#links li a {}
+#links li a {
+    color: blue;
+    cursor: pointer;
+}
 
-#abajo {
-    align-items: center;
-    background-color: #f9f9f9;
+#bajo {
+    background-color: #eaeaea;
     font-size: 11px;
     padding: 16px 120px 14px;
     height: 50px;
     clear: both;
-    /*    overflow: hidden;*/
+    align-items: center;
 }
 
 #terms {}
@@ -486,61 +551,97 @@ p {
     padding-right: 10px;
 }
 
-#terms li a {}
+#terms li a {
+    cursor: pointer;
+    color: blue;
+}
 
-#lengua {}
+#lengua {
+    /*    border: 1px solid #000;*/
+    background-image: url(../img/blueglobe.png);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: left top;
+    padding: 0 0 0 30px;
+    align-items: center;
+    float: right;
+}
+
+#cuadro {
+    border: 1px solid #000;
+    width: 250px;
+    height: 25px;
+    text-align: left;
+    background-color: white;
+}
+
+#cuadro p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 1px;
+    width: 90%;
+    float: left;
+}
+
+#cuadro i {
+    width: 10%;
+    float: right;
+    padding-top: 5px;
+}
 
 /*********************media queriiiiii 960px **********************************/
 @media screen and (max-width: 960px) {
 
     #postales {
         height: auto;
-        padding: 0 0 59% 0;
+        padding: 0 0 58.8% 0;
     }
 }
 
 /*********************media queriiiiii 777px **********************************/
 @media screen and (max-width: 777px) {
     body {
-        background-color: grey;
+        /*        background-color: grey;*/
     }
 
     #nav {
-
         /*    border: 1px solid #000;*/
-        height: 102px;
+        height: 121px;
         width: 100%;
         position: fixed;
         top: 0;
     }
 
     #logo {
-        overflow: hidden;
+        /*        overflow: hidden;*/
         position: absolute;
     }
 
     #menu {
-        /*        display: inline;*/
-        /*        float: none;*/
-        height: 250px;
+        height: 121px;
         width: 100%;
-        position: relative;
+        /*        position: relative;*/
+    }
+
+    #menu li {
+        font-size: 13px;
     }
 
     #menu li:first-child a {
+        /*        border: 1px solid red;*/
         float: left;
         position: absolute;
-        top: 80px;
-        left: 0;
-        padding: 0;
+        top: 62px;
+        padding-left: 0px;
+        width: 174px;
     }
 
     #menu li:nth-child(2) a {
         /*        border: 1px solid #000;*/
         position: absolute;
-        top: 80px;
         right: 0;
-        padding: 0;
+        top: 62px;
     }
 
     #menu li:nth-child(3) a {
@@ -561,6 +662,103 @@ p {
     #portada a:last-child {
         display: inline-block;
     }
-}
 
-/*********************media queri fin 777px*****/
+    #imagenMovida {
+        background-size: 926px;
+        background-position: center top;
+        transition: all 5s ease;
+    }
+
+    #imgDisp {
+        padding: 0 0 69% 0;
+        background-image: url(../img/any-device-mobile.jpg);
+    }
+
+    #archAdj {
+        text-align: center;
+    }
+
+    #textAdj {
+        width: 100%;
+        float: none;
+    }
+
+    #imgTab {
+        /*    border: 1px solid #000;*/
+        width: 100%;
+        margin: 3% auto;
+        float: none;
+        height: 306px;
+        max-width: 600px;
+    }
+
+    #mejorInterfaz {
+        text-align: center;
+        overflow: hidden;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+
+    #imgInterfaz {
+        margin: 0 auto;
+        width: 70%;
+        float: none;
+        height: 400px;
+    }
+
+    #txtInterfaz {
+        width: 90%;
+        padding: 3% 0 5%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    #iconsRedes {
+        width: 31%;
+        margin: 0 auto;
+        float: none;
+        padding: 3% 5% 5% 7%;
+    }
+
+    #links {
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+        padding: 3% 3% 5% 10%;
+        text-align: center;
+    }
+
+    #links li {
+        width: 29%;
+    }
+
+    #bajo {
+        margin: 0 auto;
+        font-size: 14px;
+        height: 20%;
+    }
+
+    #terms {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+
+    #terms li {
+        width: 25%;
+        margin: 0 auto;
+        padding: 5% 0;
+    }
+
+    #lengua {
+        float: none;
+        background-position: left 20% top;
+    }
+
+    #cuadro {
+        margin: 0 auto;
+    }
+
+
+
+    /*********************media queri fin 777px*****/
